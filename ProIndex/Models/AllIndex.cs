@@ -1,66 +1,118 @@
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace ProIndex.Models
 {
     public class AllIndex
     {
+        [BsonId]
+        public string _id { get; set; }
+
+        /// <summary>
+        /// รหัสภาค
+        /// </summary>
+        /// <value></value>
+        public string REG { get; set; }
+
+        /// <summary>
+        /// ภาค
+        /// </summary>
+        /// <value></value>
+        public string REG_NAME { get; set; }
+
+        /// <summary>
+        /// รหัสจังหวัด
+        /// </summary>
+        /// <value></value>
+        public string CWT { get; set; }
+
+        /// <summary>
+        /// จังหวัด
+        /// </summary>
+        /// <value></value>
+        public string CWT_NAME { get; set; }
+
+        /// <summary>
+        /// รหัวอำเภอ
+        /// </summary>
+        /// <value></value>
+        public string AMP { get; set; }
+
+        /// <summary>
+        /// อำเภอ
+        /// </summary>
+        /// <value></value>
+        public string AMP_NAME { get; set; }
+
+        /// <summary>
+        /// รหัสตำบล
+        /// </summary>
+        /// <value></value>
+        public string TAM { get; set; }
+
+        /// <summary>
+        /// ตำบล
+        /// </summary>
+        /// <value></value>
+        public string TAM_NAME { get; set; }
         /// <summary>
         /// (1.1) ปริมาณน้ำฝนเฉลี่ยรายปี
         /// </summary>
         /// <value></value>
-        public double RainEveryYear { get; set; }
+        public double? RainEveryYear { get; set; }
 
         /// <summary>
         /// (1.2) ปริมาณน้ำท่าเฉลี่ยรายปีต่อประชากร
         /// </summary>
         /// <value></value>
-        public double RainEveryYearPerPopulation { get; set; }
+        public double? RainEveryYearPerPopulation { get; set; }
 
         /// <summary>
         /// (1.3) ปริมาณการเติมน้ำบาดาลรายปีต่อประชากร
         /// </summary>
         /// <value></value>
-        public double GroundWaterEveryYearPerPopulation { get; set; }
+        public double? GroundWaterEveryYearPerPopulation { get; set; }
 
         /// <summary>
         /// (1.4) ปริมาณน้ำเก็บกักรายปีต่อประชากร
         /// </summary>
         /// <value></value>
-        public double WaterStoreEveryYearPerPopulation { get; set; }
+        public double? WaterStoreEveryYearPerPopulation { get; set; }
 
         /// <summary>
         /// (1.5) ปริมาณน้ำเก็บกักต่อน้ำท่า
         /// </summary>
         /// <value></value>
-        public double WaterStorePerWaterfront { get; set; }
+        public double? WaterStorePerWaterfront { get; set; }
 
         /// <summary>
         /// (1.6) ปริมาณน้ำบาดาลที่พัฒนามาใช้ต่อประชากร
         /// </summary>
         /// <value></value>
-        public double GroundWaterImprovePerPopulation { get; set; }
+        public double? GroundWaterImprovePerPopulation { get; set; }
 
         /// <summary>
         /// (1.7) คุณภาพน้ำผิวดิน
         /// </summary>
         /// <value></value>
-        public double QualitySurfaceWater { get; set; }
+        public double? QualitySurfaceWater { get; set; }
 
         /// <summary>
         /// (1.8) คุณภาพน้ำบาดาล
         /// </summary>
         /// <value></value>
-        public double QualityGroundWater { get; set; }
+        public double? QualityGroundWater { get; set; }
 
         /// <summary>
         /// (2.1) ครัวเรือนในชนบทที่มีน้ำประปาใช้ต่อคร้วเรือนในชนบททั้งหมด
         /// </summary>
         /// <value></value>
-        public double HouseHoldHavePlumpingPerAllHouseHold { get; set; }
+        public double? HouseHoldHavePlumpingPerAllHouseHold { get; set; }
 
         /// <summary>
         /// (2.2) ครัวเรือนในเขตเมืองที่มีน้ำประปาใช้ต่อคร้วเรือนในเขตเมืองทั้งหมด
         /// </summary>
         /// <value></value>
-        public double HouseHoldInCityHavePlumpingPerAllHouseHold { get; set; }
+        public double? HouseHoldInCityHavePlumpingPerAllHouseHold { get; set; }
 
         /// <summary>
         ///  (2.3) สถานที่ราชการที่มีน้ำประปาใช้ต่อสถานที่ราชการทั้งหมด (ร้อยละ)
@@ -144,7 +196,7 @@ namespace ProIndex.Models
         /// (3.3.2) คุณภาพน้ำที่ใช้ในการบริการ (น้ำประปา น้ำผิวดิน น้ำบาดาล) (ร้อยละ)
         /// </summary>
         /// <value></value>
-        public double? WaterQualitySurvice  { get; set; }
+        public double? WaterQualitySurvice { get; set; }
 
         /// <summary>
         /// (4.1) สมดุลของน้ำต้นทุนและการใช้น้ำ (ร้อยละ)

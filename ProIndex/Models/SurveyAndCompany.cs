@@ -1,7 +1,11 @@
+using MongoDB.Bson.Serialization.Attributes;
+
 namespace ProIndex.Models
 {
     public class SurveyAndCompany
     {
+
+        [BsonId]
         public string _id { get; set; }
 
         /// <summary>
@@ -499,7 +503,7 @@ namespace ProIndex.Models
         /// (75)ประเภทแหล่งน้ำผิวดิน_(ตามเกณฑ์ WQI)
         /// </summary>
         /// <value></value>
-        public string TypeOfSurFaceWaterByWQI { get; set; }
+        public double? TypeOfSurFaceWaterByWQI { get; set; }
 
         /// <summary>
         /// (76)จำนวนโครงการชลประทานทั้งหมด_(โครงการ)
