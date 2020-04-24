@@ -406,6 +406,6 @@ namespace ProIndex.Models
         /// (8.7.1) อ่างเก็บน้ำที่มีการจัดสรรอย่างเป็นระบบต่ออ่างเก็บน้ำทั้งหมด (ร้อยละ)
         /// </summary>
         /// <value></value>
-        public int ReservoirHasGoodManagement { get; set; }
+        public int? ReservoirHasGoodManagement { get; set; }
     }
 }
