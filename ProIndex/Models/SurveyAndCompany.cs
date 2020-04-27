@@ -503,7 +503,7 @@ namespace ProIndex.Models
         /// (75)ประเภทแหล่งน้ำผิวดิน_(ตามเกณฑ์ WQI)
         /// </summary>
         /// <value></value>
-        public double TypeOfSurFaceWaterByWQI { get; set; }
+        public string TypeOfSurFaceWaterByWQI { get; set; }
 
         /// <summary>
         /// (76)จำนวนโครงการชลประทานทั้งหมด_(โครงการ)
