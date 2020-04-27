@@ -7,7 +7,7 @@ namespace ProIndex
 {
     public class ProcressIndex
     {
-        public void Propcress(SurveyAndCompany item)
+        public AllIndex Propcress(SurveyAndCompany item)
         {
             var create = new AllIndex
             {
@@ -81,7 +81,9 @@ namespace ProIndex
                 ReservoirHasGoodManagement = null
             };
 
-            //TODO: insert it to DB
+            //TODO: insert it to DB 
+
+            return create;
         }
     }
 }

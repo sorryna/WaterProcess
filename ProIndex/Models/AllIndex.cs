@@ -94,7 +94,7 @@ namespace ProIndex.Models
         /// (1.7) คุณภาพน้ำผิวดิน
         /// </summary>
         /// <value></value>
-        public double? QualitySurfaceWater { get; set; }
+        public string QualitySurfaceWater { get; set; }
 
         /// <summary>
         /// (1.8) คุณภาพน้ำบาดาล
@@ -172,7 +172,7 @@ namespace ProIndex.Models
         /// (3.1.5) คุณภาพน้ำที่ใช้ในการเกษตร (น้ำชลประทาน น้ำผิวดิน น้ำบาดาล)
         /// </summary>
         /// <value></value>
-        public double? WaterQualityForAgriculture { get; set; }
+        public string WaterQualityForAgriculture { get; set; }
 
         /// <summary>
         /// (3.2.1) ผลิตภาพการใช้น้ำด้านอุตสาหกรรม (บาท/ลบ.ม.)
@@ -400,12 +400,12 @@ namespace ProIndex.Models
         /// (8.6.2) ระบบติดตามตรวจสอบที่มีประสิทธิภาพและมีการบำรุงรักษาต่อระบบทั้งหมด (ร้อยละ)
         /// </summary>
         /// <value></value>
-        public int GoodCoverageMonitoringSystem { get; set; }
+        public double? GoodCoverageMonitoringSystem { get; set; }
 
         /// <summary>
         /// (8.7.1) อ่างเก็บน้ำที่มีการจัดสรรอย่างเป็นระบบต่ออ่างเก็บน้ำทั้งหมด (ร้อยละ)
         /// </summary>
         /// <value></value>
-        public int ReservoirHasGoodManagement { get; set; }
+        public double? ReservoirHasGoodManagement { get; set; }
     }
 }

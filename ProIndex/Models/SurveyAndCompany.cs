@@ -66,157 +66,157 @@ namespace ProIndex.Models
         /// 2.ครัวเรือนทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsHouseHold { get; set; }
+        public double IsHouseHold { get; set; }
 
         /// <summary>
         /// 3.ครัวเรือนที่มีน้ำประปาคุณภาพดี  
         /// </summary>
         /// <value></value>
-        public double? IsHouseHoldGoodPlumbing { get; set; }
+        public double IsHouseHoldGoodPlumbing { get; set; }
 
         /// <summary>
         /// 4.ครัวเรือนที่มีพื้นที่เกษตรกรรมในพื้นที่ชลประทาน
         /// </summary>
         /// <value></value>
-        public double? IsAgricultureHasIrrigationField { get; set; }
+        public double IsAgricultureHasIrrigationField { get; set; }
 
         /// <summary>
         /// 5.ครัวเรือนในเขตเมืองที่มีน้ำประปาใช้ (ในเขตเทศบาล)
         /// </summary>
         /// <value></value>
-        public double? IsHouseHoldHasPlumbingDistrict { get; set; }
+        public double IsHouseHoldHasPlumbingDistrict { get; set; }
 
         /// <summary>
         /// 6.ครัวเรือนในชนบทที่มีน้ำประปาใช้ (นอกเขตเทศบาล)
         /// </summary>
         /// <value></value>
-        public double? IsHouseHoldHasPlumbingCountryside { get; set; }
+        public double IsHouseHoldHasPlumbingCountryside { get; set; }
 
         /// <summary>
         /// 7.คุณภาพน้ำที่ใช้ในการผลิต (น้ำประปา ผิวดิน น้ำบาดาล)
         /// </summary>
         /// <value></value>
-        public double? IsFactorialWaterQuality { get; set; }
+        public double IsFactorialWaterQuality { get; set; }
 
         /// <summary>
         /// 8.คุณภาพน้ำที่ใช้ในภาคบริการ (น้ำประปา ผิวดิน น้ำบาดาล)
         /// </summary>
         /// <value></value>
-        public double? IsCommercialWaterQuality { get; set; }
+        public double IsCommercialWaterQuality { get; set; }
 
         /// <summary>
         /// สน.1 9.จำนวนบ่อน้ำบาดาล
         /// </summary>
         /// <value></value>
-        public double? CountGroundWaterUnit { get; set; }
+        public double CountGroundWaterUnit { get; set; }
 
         /// <summary>
         /// สน.2 9.จำนวนบ่อน้ำบาดาล
         /// </summary>
         /// <value></value>
-        public double? CountGroundWaterCom { get; set; }
+        public double CountGroundWaterCom { get; set; }
 
         /// <summary>
         /// 10.จำนวนประชากร
         /// </summary>
         /// <value></value>
-        public double? CountPopulation { get; set; }
+        public double CountPopulation { get; set; }
 
         /// <summary>
         /// 11.จำนวนประชากรวัยทำงาน
         /// </summary>
         /// <value></value>
-        public double? CountWorkingAge { get; set; }
+        public double CountWorkingAge { get; set; }
 
         /// <summary>
         /// 12.โรงงานอุตสาหกรรมทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsFactorial { get; set; }
+        public double IsFactorial { get; set; }
 
         /// <summary>
         /// 13.โรงงานอุตสาหกรรมที่มีระบบบำบัดน้ำเสีย
         /// </summary>
         /// <value></value>
-        public double? IsFactorialWaterTreatment { get; set; }
+        public double IsFactorialWaterTreatment { get; set; }
 
         /// <summary>
         /// 14.หมู่บ้านที่มีระบบบำบัดน้ำเสีย
         /// </summary>
         /// <value></value>
-        public double? IsCommunityWaterManagementHasWaterTreatment { get; set; }
+        public double IsCommunityWaterManagementHasWaterTreatment { get; set; }
 
         /// <summary>
         /// 15.พื้นที่ชลประทาน
         /// </summary>
         /// <value></value>
-        public double? FieldCommunity { get; set; }
+        public double FieldCommunity { get; set; }
 
         /// <summary>
         /// 16.ระดับความลึกของน้ำท่วม (ในเขตที่อยู่อาศัย)
         /// </summary>
         /// <value></value>
-        public double? AvgWaterHeightCm { get; set; }
+        public double AvgWaterHeightCm { get; set; }
 
         /// <summary>
         /// 17.ระยะเวลาที่น้ำท่วมขัง (ในเขตที่อยู่อาศัย)
         /// </summary>
         /// <value></value>
-        public double? TimeWaterHeightCm { get; set; }
+        public double TimeWaterHeightCm { get; set; }
 
         /// <summary>
         /// 18.ระยะเวลาที่มีน้ำประปาใช้ (เดือน) 
         /// </summary>
         /// <value></value>
-        public double? HasntPlumbing { get; set; }
+        public double HasntPlumbing { get; set; }
 
         /// <summary>
         /// 19.สถานที่ราชการทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsGovernment { get; set; }
+        public double IsGovernment { get; set; }
 
         /// <summary>
         /// 20.สถานที่ราชการที่มีน้ำประปาใช้
         /// </summary>
         /// <value></value>
-        public double? IsGovernmentUsage { get; set; }
+        public double IsGovernmentUsage { get; set; }
 
         /// <summary>
         /// 21.สถานที่ราชการที่มีน้ำประปาที่มีคุณภาพมาตรฐาน
         /// </summary>
         /// <value></value>
-        public double? IsGovernmentWaterQuality { get; set; }
+        public double IsGovernmentWaterQuality { get; set; }
 
         /// <summary>
         /// 22.หมู่บ้านในพื้นที่น้ำท่วมซ้ำซากที่มีการเตือนภัยและมาตรการช่วยเหลือ
         /// </summary>
         /// <value></value>
-        public double? CommunityNatureDisaster { get; set; }
+        public double CommunityNatureDisaster { get; set; }
 
         /// <summary>
         /// สน.1  23.แหล่งน้ำขนาดใหญ่ กลาง และเล็ก
         /// </summary>
         /// <value></value>
-        public double? WaterSourcesUnit { get; set; }
+        public double WaterSourcesUnit { get; set; }
 
         /// <summary>
         /// สน.2 23.แหล่งน้ำขนาดใหญ่ กลาง และเล็ก
         /// </summary>
         /// <value></value>
-        public double? WaterSourcesCom { get; set; }
+        public double WaterSourcesCom { get; set; }
 
         /// <summary>
         /// 24.จำนวนโรงงานอุตสาหกรรมที่มีน้ำเสียจากระบบ
         /// </summary>
         /// <value></value>
-        public double? IndustryHasWasteWaterTreatment { get; set; }
+        public double IndustryHasWasteWaterTreatment { get; set; }
 
         /// <summary>
         /// 25.ประชากรที่อาศัยในครัวเรือนที่มีน้ำท่วม 
         /// </summary>
         /// <value></value>
-        public double? PeopleInFloodedArea { get; set; }
+        public double PeopleInFloodedArea { get; set; }
 
         /// <summary>
         /// 26.ปริมาณการใช้น้ำบาดาลเพื่อการเกษตร(น้ำบาดาล น้ำซื้อ) สน.2
@@ -287,193 +287,193 @@ namespace ProIndex.Models
         /// 39.จำนวนหมู่บ้าน/ชุมชนทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? CountCommunity { get; set; }
+        public double CountCommunity { get; set; }
 
         /// <summary>
         /// 40.จำนวนหมู่บ้าน/ชุมชนที่มีอุทกภัย ดินโคลนถล่ม
         /// </summary>
         /// <value></value>
-        public double? CountCommunityHasDisaster { get; set; }
+        public double CountCommunityHasDisaster { get; set; }
 
         /// <summary>
         /// 41.ครัวเรือนในชนบททั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsAllHouseHoldCountryside { get; set; }
+        public double IsAllHouseHoldCountryside { get; set; }
 
         /// <summary>
         /// 42.ครัวเรือนในเขตเมืองทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsAllHouseHoldDistrict { get; set; }
+        public double IsAllHouseHoldDistrict { get; set; }
 
         /// <summary>
         /// 43.สถานประกอบการผลิตทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsAllFactorial { get; set; }
+        public double IsAllFactorial { get; set; }
 
         /// <summary>
         /// 44.สถานประกอบการบริการทั้งหมด
         /// </summary>
         /// <value></value>
-        public double? IsAllCommercial { get; set; }
+        public double IsAllCommercial { get; set; }
 
         /// <summary>
         /// (45) ขอบเขตพื้นที่ลุ่มน้ำและลุ่มน้ำย่อย _(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfSubBasin { get; set; }
+        public double AreaOfSubBasin { get; set; }
 
         /// <summary>
         /// (46) ขอบเขตพื้นที่ตำบล_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfSubdistrict { get; set; }
+        public double AreaOfSubdistrict { get; set; }
 
         /// <summary>
         /// (47)ขอบเขตพื้นที่เขตเมือง_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfCity { get; set; }
+        public double AreaOfCity { get; set; }
 
         /// <summary>
         /// (48)ขอบเขตพื้นที่อำเภอ_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfDistrict  { get; set; }
+        public double AreaOfDistrict  { get; set; }
 
         /// <summary>
         /// (49)ขอบเขตพื้นที่จังหวัด_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfProvince { get; set; }
+        public double AreaOfProvince { get; set; }
 
         /// <summary>
         /// (50)ขอบเขตพื้นที่ภูมิภาค_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfReg { get; set; }
+        public double AreaOfReg { get; set; }
 
         /// <summary>
         /// (51)แผนที่พื้นที่ที่มีโอกาสเกิดดินถล่ม_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaHasChanceLandSlide { get; set; }
+        public double AreaHasChanceLandSlide { get; set; }
 
         /// <summary>
         /// (52)แผนที่พื้นที่น้ำท่วมซ้ำซาก_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaHasChanceFlood { get; set; }
+        public double AreaHasChanceFlood { get; set; }
 
         /// <summary>
         /// (53)แผนที่พื้นที่เสี่ยงภัยแล้งซ้ำซาก_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaHasChanceDrought { get; set; }
+        public double AreaHasChanceDrought { get; set; }
 
         /// <summary>
         /// (54)แผนที่การใช้ประโยชน์ที่ดิน
         /// </summary>
         /// <value></value>
-        public double? LandUse { get; set; }
+        public double LandUse { get; set; }
 
         /// <summary>
         /// (55)พื้นที่เกษตรกรรมทั้งหมด_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfAgriculture { get; set; }
+        public double AreaOfAgriculture { get; set; }
 
         /// <summary>
         /// (56)พื้นที่เกษตรกรรมในเขตชลประทาน_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfAgricultureHasIrrigation { get; set; }
+        public double AreaOfAgricultureHasIrrigation { get; set; }
 
         /// <summary>
         /// (57)มูลค่าความเสียหาย ต่อปีจากน้ำแล้ง_(บาท)
         /// </summary>
         /// <value></value>
-        public double? DamageCostOfDroughtPerYear  { get; set; }
+        public double DamageCostOfDroughtPerYear  { get; set; }
 
         /// <summary>
         /// (58)มูลค่าความเสียหาย ต่อปีจากน้ำท่วม_(บาท)
         /// </summary>
         /// <value></value>
-        public double? DamageCostOfFloodPerYear  { get; set; }
+        public double DamageCostOfFloodPerYear  { get; set; }
 
         /// <summary>
         /// (59)ความยาวเส้นทางคมนาคมในพื้นที่น้ำท่วมซ้ำซาก_(กม.)
         /// </summary>
         /// <value></value>
-        public double? LengthOfRoadInAreaOfFlood { get; set; }
+        public double LengthOfRoadInAreaOfFlood { get; set; }
 
         /// <summary>
         /// (60)แผนที่พื้นที่ป่าไม้_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfForest { get; set; }
+        public double AreaOfForest { get; set; }
 
         /// <summary>
         /// (61)ค่าดัชนีพืชพรรณ_(ค่าคะแนนNDVI)
         /// </summary>
         /// <value></value>
-        public double? IndexOfPlant { get; set; }
+        public double IndexOfPlant { get; set; }
 
         /// <summary>
         /// (62)ความยาวของทางน้ำสายหลักทั้งหมด_(กม.)
         /// </summary>
         /// <value></value>
-        public double? LengthOfMainRiver { get; set; }
+        public double LengthOfMainRiver { get; set; }
 
         /// <summary>
         /// (63)ความยาวของทางน้ำสายหลักที่มีสภาพเหมาะสมในการขนส่งทางน้ำ_(กม.)
         /// </summary>
         /// <value></value>
-        public double? LengthOfMainRiverAppropriateToWaterTransport { get; set; }
+        public double LengthOfMainRiverAppropriateToWaterTransport { get; set; }
 
         /// <summary>
         /// (64)ค่า TDS ของน้ำบาดาล_(ค่าคะแนน)
         /// </summary>
         /// <value></value>
-        public double? TDSOfGroundWater { get; set; }
+        public double TDSOfGroundWater { get; set; }
 
         /// <summary>
         /// (65)ปริมาณการเติมน้ำบาดาลรายปี_(ล้าน ลบ.ม./ปี)
         /// </summary>
         /// <value></value>
-        public double? RefillGroundWaterPerYear { get; set; }
+        public double RefillGroundWaterPerYear { get; set; }
 
         /// <summary>
         /// (66)ปริมาณน้ำท่าเฉลี่ยรายปี_(ล้าน ลบ.ม./ปี)
         /// </summary>
         /// <value></value>
-        public double? SurfaceWaterPerYear { get; set; }
+        public double SurfaceWaterPerYear { get; set; }
 
         /// <summary>
         /// (67)ปริมาณน้ำท่ารายเดือน_(ล้าน ลบ.ม./เดือน)
         /// </summary>
         /// <value></value>
-        public double? SurfaceWaterPerMonth { get; set; }
+        public double SurfaceWaterPerMonth { get; set; }
 
         /// <summary>
         /// (68)ปริมาณน้ำฝนรายปี_(มม./ปี)
         /// </summary>
         /// <value></value>
-        public double? RainPerYear { get; set; }
+        public double RainPerYear { get; set; }
 
         /// <summary>
         /// (69)ปริมาณน้ำฝนรายวัน
         /// </summary>
         /// <value></value>
-        public double? RainPerDay { get; set; }
+        public double RainPerDay { get; set; }
 
         /// <summary>
         /// (70)ปริมาณน้ำรักษาระบบนิเวศ_(ล้าน ลบ.ม./เดือน)
         /// </summary>
         /// <value></value>
-        public double? WaterOfPreservingEcosystem { get; set; }
+        public double WaterOfPreservingEcosystem { get; set; }
 
         /// <summary>
         /// (71)อ่างเก็บน้ำทั้งหมด_(แห่ง)
@@ -485,7 +485,7 @@ namespace ProIndex.Models
         /// (72)ปริมาตรความจุใช้งานของอ่างเก็บน้ำ_(ล้าน ลบ.ม.)
         /// </summary>
         /// <value></value>
-        public double? CapacityOfReservoir { get; set; }
+        public double CapacityOfReservoir { get; set; }
 
         /// <summary>
         /// (73)อ่างเก็บน้ำที่มีการจัดสรรน้ำอย่างเป็นระบบ_(แห่ง)
@@ -497,13 +497,13 @@ namespace ProIndex.Models
         /// (74)แหล่งน้ำที่มีคะแนนตาม WQI เฉลี่ยรายปี_(ค่าคะแนน)
         /// </summary>
         /// <value></value>
-        public double? WatersourceAvgWQIPerYear { get; set; }
+        public double WatersourceAvgWQIPerYear { get; set; }
 
         /// <summary>
         /// (75)ประเภทแหล่งน้ำผิวดิน_(ตามเกณฑ์ WQI)
         /// </summary>
         /// <value></value>
-        public double? TypeOfSurFaceWaterByWQI { get; set; }
+        public double TypeOfSurFaceWaterByWQI { get; set; }
 
         /// <summary>
         /// (76)จำนวนโครงการชลประทานทั้งหมด_(โครงการ)
@@ -581,7 +581,7 @@ namespace ProIndex.Models
         /// (88)พื้นที่เกษตรกรรมในพื้นที่แล้งซ้ำซาก_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public double? AreaOfAgricultureInDrought { get; set; }
+        public double AreaOfAgricultureInDrought { get; set; }
 
         /// <summary>
         /// (89)พื้นที่เขตเมืองในเขตพื้นที่น้ำท่วมซ้ำซาก_(ตร.กม.)
