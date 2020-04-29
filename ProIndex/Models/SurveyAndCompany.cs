@@ -60,7 +60,7 @@ namespace ProIndex.Models
         /// 1.ครัวเรือนเกษตรกรรม
         /// </summary>
         /// <value></value>
-        public int IsAgriculture { get; set; }
+        public double IsAgriculture { get; set; }
 
         /// <summary>
         /// 2.ครัวเรือนทั้งหมด
@@ -479,7 +479,7 @@ namespace ProIndex.Models
         /// (71)อ่างเก็บน้ำทั้งหมด_(แห่ง)
         /// </summary>
         /// <value></value>
-        public int Reservoir { get; set; }
+        public double Reservoir { get; set; }
 
         /// <summary>
         /// (72)ปริมาตรความจุใช้งานของอ่างเก็บน้ำ_(ล้าน ลบ.ม.)
@@ -491,7 +491,7 @@ namespace ProIndex.Models
         /// (73)อ่างเก็บน้ำที่มีการจัดสรรน้ำอย่างเป็นระบบ_(แห่ง)
         /// </summary>
         /// <value></value>
-        public int ReservoirHasAllocate { get; set; }
+        public double ReservoirHasAllocate { get; set; }
 
         /// <summary>
         /// (74)แหล่งน้ำที่มีคะแนนตาม WQI เฉลี่ยรายปี_(ค่าคะแนน)
@@ -503,79 +503,79 @@ namespace ProIndex.Models
         /// (75)ประเภทแหล่งน้ำผิวดิน_(ตามเกณฑ์ WQI)
         /// </summary>
         /// <value></value>
-        public string TypeOfSurFaceWaterByWQI { get; set; }
+        public double TypeOfSurFaceWaterByWQI { get; set; }
 
         /// <summary>
         /// (76)จำนวนโครงการชลประทานทั้งหมด_(โครงการ)
         /// </summary>
         /// <value></value>
-        public int IrrigationProject { get; set; }
+        public double IrrigationProject { get; set; }
 
         /// <summary>
         /// (77)จำนวนโครงการชลประทานที่มีการมีส่วนร่วม_(โครงการ)
         /// </summary>
         /// <value></value>
-        public int IrrigationProjectHasParticipate { get; set; }
+        public double IrrigationProjectHasParticipate { get; set; }
 
         /// <summary>
         /// (78)จำนวนสถานีติดตามปริมาณและคุณภาพน้ำทั้งหมด_(สถานี)
         /// </summary>
         /// <value></value>
-        public int WaterTrackingStation { get; set; }
+        public double WaterTrackingStation { get; set; }
 
         /// <summary>
         /// (79)จำนวนสถานีติดตามปริมาณและคุณภาพน้ำที่มีประสิทธิภาพและมีการบำรุงรักษา_(สถานี)
         /// </summary>
         /// <value></value>
-        public int GoodWaterTrackingStation { get; set; }
+        public double GoodWaterTrackingStation { get; set; }
 
         /// <summary>
         /// (80)จำนวนโครงการวิจัยด้านการจัดการทรัพยากรน้ำ_(โครงการ)
         /// </summary>
         /// <value></value>
-        public int WaterResourcesManagementProject { get; set; }
+        public double WaterResourcesManagementProject { get; set; }
 
         /// <summary>
         /// (81)จำนวนองค์กรจัดการน้ำในพื้นที่_(องค์กร)
         /// </summary>
         /// <value></value>
-        public int WaterManagementCompany { get; set; }
+        public double WaterManagementCompany { get; set; }
 
         /// <summary>
         /// (82)จำนวนองค์กรบริหารจัดการป่าชุมชน_(องค์กร)
         /// </summary>
         /// <value></value>
-        public int ForestManagementCompany { get; set; }
+        public double ForestManagementCompany { get; set; }
 
         /// <summary>
         /// (83)แผนการจัดการน้ำในพื้นที่_(แผน)
         /// </summary>
         /// <value></value>
-        public int PlanOfWaterManagrmentInArea { get; set; }
+        public double PlanOfWaterManagrmentInArea { get; set; }
 
         /// <summary>
         /// (84)ผลิตภัณฑ์มวลรวมจังหวัด (GPP)_(ล้านบาท)
         /// </summary>
         /// <value></value>
-        public int GPPOfProvince { get; set; }
+        public double GPPOfProvince { get; set; }
 
         /// <summary>
         /// (85)ผลิตภัณฑ์มวลรวมจังหวัดด้านการเกษตร_(ล้านบาท)
         /// </summary>
         /// <value></value>
-        public int GPPOfAgricultureInProvince { get; set; }
+        public double GPPOfAgricultureInProvince { get; set; }
 
         /// <summary>
         /// (86)ผลิตภัณฑ์มวลรวมจังหวัดด้านการอุตสาหกรรม_(ล้านบาท)
         /// </summary>
         /// <value></value>
-        public int GPPOfCommercialInProvince { get; set; }
+        public double GPPOfCommercialInProvince { get; set; }
 
         /// <summary>
         /// (87)ผลิตภัณฑ์มวลรวมจังหวัดด้านการบริการ_(ล้านบาท)
         /// </summary>
         /// <value></value>
-        public int GPPOfServiceInProvince { get; set; }
+        public double GPPOfServiceInProvince { get; set; }
 
         /// <summary>
         /// (88)พื้นที่เกษตรกรรมในพื้นที่แล้งซ้ำซาก_(ตร.กม.)
@@ -587,24 +587,24 @@ namespace ProIndex.Models
         /// (89)พื้นที่เขตเมืองในเขตพื้นที่น้ำท่วมซ้ำซาก_(ตร.กม.)
         /// </summary>
         /// <value></value>
-        public int AreaOfCityHasFlood { get; set; }
+        public double AreaOfCityHasFlood { get; set; }
 
         /// <summary>
         /// (90)จำนวนเดือนที่มีน้ำรักษาระบบนิเวศท้ายน้ำ_(เดือน)
         /// </summary>
         /// <value></value>
-        public int MonthPreservingEcosystems { get; set; }
+        public double MonthPreservingEcosystems { get; set; }
 
         /// <summary>
         /// (91)จำนวนจุดตรวจวัดค่า WQI ที่มีค่ามากกว่า 61_(จุด)
         /// </summary>
         /// <value></value>
-        public int HasMeasurementWQIOverSixOne { get; set; }
+        public double HasMeasurementWQIOverSixOne { get; set; }
 
         /// <summary>
         /// (92)จำนวนจุดตรวจวัดค่า WQI ทั้งหมด_(จุด)
         /// </summary>
         /// <value></value>
-        public int MeasurementWQI { get; set; }
+        public double MeasurementWQI { get; set; }
     }
 }
