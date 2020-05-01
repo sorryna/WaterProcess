@@ -42,9 +42,14 @@ namespace ProIndex
                 var id = itemID.Substring(1);
                 var dataForRiver = connectDB.FindDataForRiver(id);
 
-                var pro = new ProcressRiver();
-                var result = pro.Procress(item, dataForRiver);
-                connectDB.InsertRiverToDB(result);
+                var riverIndex = new ProcressRiver();
+                var resultIndex = riverIndex.Procress(item, dataForRiver);
+                connectDB.InsertRiverIndexToDB(resultIndex);
+
+                var riverPoint = new ProcressRiverPoint();
+                var resultPoint = riverPoint.Procress(resultIndex);
+                connectDB.InsertRiverPointToDB(resultPoint);
+                
                 System.Console.WriteLine(count);
             }
         }

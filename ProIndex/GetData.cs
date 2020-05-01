@@ -11,15 +11,17 @@ namespace ProIndex
         IMongoCollection<AllIndex> CollectionAllPoint{ get; set; }
         IMongoCollection<River> CollectionRiver{ get; set; }
         IMongoCollection<River> CollectionRiverIndex{ get; set; }
+        IMongoCollection<River> CollectionRiverPoint{ get; set; }
         public GetData()
         {
             var client = new MongoClient("mongodb://firstclass:Th35F1rstCla55@mongoquickx4h3q4klpbxtq-vm0.southeastasia.cloudapp.azure.com/wdata");
             var database = client.GetDatabase("wdata");
             Collection92Data = database.GetCollection<SurveyAndCompany>("92Data");
-            CollectionAllIndex = database.GetCollection<AllIndex>("AllIndex");
-            CollectionAllPoint = database.GetCollection<AllIndex>("AllPoint");
+            CollectionAllIndex = database.GetCollection<AllIndex>("areaIndex");
+            CollectionAllPoint = database.GetCollection<AllIndex>("areaPoint");
             CollectionRiver = database.GetCollection<River>("river2");
             CollectionRiverIndex = database.GetCollection<River>("riverIndex");
+            CollectionRiverPoint = database.GetCollection<River>("riverPoint");
         }
 
         public List<SurveyAndCompany> Get92Data()
@@ -46,8 +48,12 @@ namespace ProIndex
             return CollectionAllIndex.Find(it => it._id == item).FirstOrDefault();
         }
 
-        public void InsertRiverToDB(River item){
+        public void InsertRiverIndexToDB(River item){
             CollectionRiverIndex.InsertOne(item);
+        }
+
+        public void InsertRiverPointToDB(River item){
+            CollectionRiverPoint.InsertOne(item);
         }
     }
 }
